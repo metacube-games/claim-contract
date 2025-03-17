@@ -293,7 +293,7 @@ mod ClaimContract {
             while i != claimer_token_ids.len() {
                 result.append(self.claimed.entry(*claimer_token_ids[i]).read());
                 i += 1;
-            }
+            };
 
             result.span()
         }
